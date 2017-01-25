@@ -1,4 +1,4 @@
-/***********************************************
+﻿/***********************************************
 * ng-grid JavaScript Library
 * Authors: https://github.com/angular-ui/ng-grid/blob/master/README.md 
 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
@@ -3613,7 +3613,7 @@ ngGridDirectives.directive('ngViewport', [function() {
         elm.bind("mousewheel DOMMouseScroll", mousewheel);
 
         elm.on('$destroy', function() {
-            elm.off('scroll', scroll);
+            elm.off('scroll');
             elm.off('mousewheel DOMMouseScroll', mousewheel);
         });
 
